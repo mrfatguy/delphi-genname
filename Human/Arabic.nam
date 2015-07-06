@@ -1,0 +1,564 @@
+[Setup]
+Mode=1
+Author=Tomasz Trejderowski
+CreationDate=2 luty 2001 r.
+Description=Arabskie imiona i nazwiska. Wystêpuje wiele kombinacji (œci¹gniêtych z jakiegoœ s³ownika) oraz kilka nazwisk typowo tureckich, chocia¿ nazwanie Turka Arabem jest obraŸliwe.
+
+[MaleNames]
+Aban
+Abbas
+Abd
+Abdul Alim
+Abdul Azim
+Abdul Aziz
+Abdul Baqi
+Abdul Bari
+Abdul Barr
+Abdul Basit
+Abdul D¿abbar
+Abdul D¿alil
+Abdul Gaffar
+Abdul Gafur
+Abdul Gani
+Abdul Hadi
+Abdul Hafiz
+Abdul Hakim
+Abdul Halim
+Abdul Hamid
+Abdul Haqq
+Abdul Hasib
+Abdul Karim
+Abdul Khaliq
+Abdul Latif
+Abdul Mad¿id
+Abdul Mad¿iid
+Abdul Malik 
+Abdul Mud¿ib
+Abdul Mue'id
+Abdul Mughni
+Abdul Mu'izz
+Abdul Mu'min
+Abdul Muqtadir
+Abdul Muta' ali
+Abdul Nur
+Abdul Qadir
+Abdul Qahhar
+Abdul Qajjum
+Abdul Qawi
+Abdul Quddus
+Abdul Wadud
+Abdul Wad¿id
+Abdul Wahhab
+Abdul Waris
+Abdul Zahir
+Abdullah
+Abdur Rahim
+Abdur Rahman
+Abdur Raszid
+Abdur Rauf
+Abdur Razzaq
+Abdus Sabur
+Abdus Salam
+Abdus Samad
+Abdus Sami
+Abdus Szahid
+Abdus Szakur
+Abed
+Abedin
+Abu
+Abu Bakr
+Abul Hajr
+Adil
+Adnan
+Afif
+Ahmad
+Ajatullah
+Ajman
+Ajub
+Akram
+Al Abbas
+Ala Udin
+Ali
+Allmah
+Amd¿ad
+Amin
+Amir
+Ammar
+Anis
+Arif
+Arsh
+Ashraf
+Asif
+Asim
+Ata
+Awad
+Azam
+Azhar
+Azzam
+Badr Udin
+Baha
+Baha Udin
+Bahij Udin
+Bahir
+Bakr
+Basam
+Basel
+Basim
+Baszar
+Bilal
+Biszr
+Burhan
+Dija Udin
+Dodi
+D¿abir
+D¿afar
+D¿alal
+D¿amal
+D¿amal Udin
+D¿amil
+D¿awad
+Fadi
+Fahad
+Faisal
+Fakhir
+Farid
+Faris
+Fatin
+Fawaz
+Fuad
+Galib
+Gasan
+Gazi
+Gijas
+Hajsam
+Hamza
+Hani
+Harun
+Hassan
+Haszim
+Hatim
+Hiszam
+Humam
+Husajfa
+Husam
+Husam Udin
+Hussein
+Ibn
+Ibrahim
+Idris
+Ihsan
+Imad
+Imad Udin
+Imran
+Isa
+Isam
+Ishaq
+Ismael
+Izz Udin
+Jaman
+Jasar
+Jasin
+Jasir
+Jazid
+Jusuf
+Kamal
+Khair Udin
+Khaldun
+Khalid
+Khalil
+Khuzajmah
+Labib
+Lu'aj
+Luqman
+Lutfi
+Ma'awija
+Mad¿d
+Mad¿d Udin
+Mahdi
+Mahir
+Mahmud
+Majsarah
+Mamduh
+Mamnun
+Mansur
+Marwan
+Masud
+Mazin
+Misbaah
+Mohammed
+Muad¿id
+Muas
+Muawija
+Mud¿ahid
+Mufid
+Muhammad
+Muhannad
+Muhsin
+Muhtadi
+Mukhtar
+Munir
+Munsir
+Muntasir
+Musa
+Musad
+Mustafa
+Mutasim
+Muwafaq
+Nabhan
+Nabil
+Nadim
+Nadir
+Nad¿ib
+Nad¿m Udin
+Naim
+Nasih
+Nasim
+Nasser Udin
+Nathir
+Nawfal
+Nazih
+Nuh
+Nur Udin
+Nuri
+Omar
+Omeir
+Omran
+Osama
+Osman
+Qajs
+Qasim
+Qatadah
+Qudamah
+Qutajbah
+Rabah
+Rad¿ab
+Ragheb
+Rahman
+Rakin
+Ramiz
+Raszad
+Ratib
+Ridwan
+Rijad
+Saad
+Sabih
+Sabir
+Sad¿id
+Safij
+Safwan
+Sahir
+Said
+Sajf Udin
+Sajid
+Salah
+Salah Udin
+Salem
+Salih
+Salim
+Salman
+Sarijah
+Seyyed
+Shibsankar
+Sirad¿
+Subhi
+Subrahamanyan
+Suhail
+Suhajb
+Sulajman
+Suoud
+Szihab
+Tafiq
+Tahir
+Tajmullah
+Tajsir
+Talal
+Talha
+Tamam
+Tamir
+Tarfah
+Tarif
+Tariq
+Thabit
+Thaqib
+Ubadah
+Ubaidah
+Ubaj
+Umair
+Umar
+Umarah
+Usamah
+Utbah
+Wad¿ih
+Wafiq
+Wahid
+Walid
+Walijudin
+Walijullah
+Wasim
+Zafir
+Zahid
+Zajd
+Zakij
+Zijad
+Zuhajr
+Zul Fiqar
+
+[FemaleNames]
+Abir
+Abla
+Adab
+Adila
+Afaf
+Afra
+Aida
+Ajsza
+Alia
+Amal
+Amani
+Amatullah
+Amina
+Amira
+Anisa
+Ariba
+Arid¿
+Arwa
+Asa
+Asala
+Asija
+Asila
+Asma
+Atma
+Azhar
+Aziza
+Azza
+Badrija
+Bahija
+Bahira
+Basima
+Basma
+Baszira
+Busajna
+Buszra
+D¿ala
+D¿amila
+D¿anan
+D¿umana
+Fadwa
+Faiza
+Farida
+Fariha
+Fatima
+Fatin
+Fatina
+Fawzija
+Fazila
+Galija
+Hadija
+Haifa
+Hajam
+Hala
+Halima
+Hamida
+Hanifa
+Haniya
+Hasna
+Hessa
+Hurija
+Inaja
+Jakuta
+Jamha
+Jasira
+Jasmin
+Jusra
+Karima
+Khadid¿a
+Khalida
+Khawla
+Latifa
+Lubaba
+Madiha
+Mad¿ida
+Maisa
+Majjada 
+Majmuna
+Majsa
+Mawija
+Miriam
+Mufida
+Muhd¿a
+Muszira
+Nabiha
+Nabila
+Nadida
+Nadira
+Nadwa
+Nad¿a
+Nad¿iba
+Nad¿ija
+Nafisa
+Nahla
+Naima
+Nasiha
+Nasira
+Naszida
+Naszita
+Naziha
+Nazija
+Nazira
+Nusajba
+Rabia
+Radija
+Radwa
+Rad¿a
+Rafa
+Raida
+Raja
+Ranija
+Rasha
+Raszida
+Rawda
+Rawija
+Rima 
+Ruqaja
+Ruwajda
+Sabira
+Safa
+Safija
+Sahar
+Sahla
+Sakina
+Saliha
+Salima
+Samar
+Samiha
+Samija
+Samira
+Sana
+Sawda
+Suhajla
+Suhajma
+Sumaija
+Szadija
+Szarifa
+Szatha
+Tahira
+Tamadur
+Thana
+Thara
+Thuraja
+Wad¿iha
+Wafa
+Wafija
+Warda
+Wisal
+Zafira
+Zahira
+Zahra
+Zaina
+Zakija
+
+[SurNames]
+Abbas
+Abtahi
+Adid
+Ali
+Allah
+Almodarresi
+Alqazwini
+Amin
+Amini
+Amir
+Ansari
+Aziz
+Baqir
+Baradei
+Bharati
+Caliskan
+Çelik
+Chamenei
+Chandrasekhar
+Chattab
+Chomeini
+Demir
+Fadlallah
+Faiz
+Fayed
+Fazil 
+Golpaygan
+Hadi
+Hadis
+Hakam
+Hakim
+Hassan
+Hazrat
+Hojjat
+Hossein
+Huda
+Husain
+Hussain
+Hussayni
+Imani
+Jawad
+Kahir
+Kaim
+Kaya
+Khadraoui
+Khoei
+Laden
+Ladin
+Lankaraani
+Mahdi
+Mamun
+Mansur
+Mesbah
+Modari
+Mohsin
+Mortaza 
+Mufid
+Muktadir
+Muktafi
+Mundhir
+Muntasir
+Mustain
+Mustand¿id
+Mutasim
+Mutawakkil
+Muti
+Nasir
+Nasr
+Nuri
+Radi
+Rahman
+Raszid
+Saafi
+Saanei
+Sadiq
+Sadr
+Sad¿d¿ad
+Saed
+ªahin
+Sayed
+Sayyed
+Sayyid
+Seestani
+Shahroudi
+Shaykh
+Shirazi
+Tabatabai
+Tabrizi
+Tai
+Udhm
+Uzma
+Wathik
+Yazdi
+Yilmaz
+Zafir
+Zahir
+
+[TitleNames]
+ 
+ al-
+ as-
+ ben 
+ bin 
+ el 

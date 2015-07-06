@@ -1,0 +1,42 @@
+[Setup]
+Mode=3
+Author=Tomasz Trejderowski
+CreationDate=28 paüdziernika 2000 r.
+Description=Nazwy postaci z gry Dragon Lance.
+
+[Begin]
+Amethyst
+Bronze
+Diamond
+Emerald
+Gold
+Iron
+Platinium
+Ruby
+Sapphire
+Shine
+Silver
+Skull
+Steel
+Strong
+Topaz
+Zodiac
+
+[Middle]
+Helm
+Horse
+Knight
+Moon
+Plate
+Shield
+Star
+Stone
+Sun
+Sword
+Warrior
+Water
+Wind
+Windblow
+
+[End]
+ 

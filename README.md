@@ -4,6 +4,14 @@ Here comes my Delphi version (with sources) to some web tool, that allowed to ge
 
 **This project ABANDONED! There is no wiki, issues and no support. There will be no future updates. Unfortunately, you're on your own.**
 
+This program allows name generation in three different modes. Play a little bit with different dictionary files to catch the difference.
+
+Program comes with an extended editor, which allows you to edit, update or change dictionary files in any cases.
+
+Keep in mind that certain dictionary files maybe even twenty years old!
+
+Where it was possible, I carefully marked author or maker of original database, that I used for creating my own dictionary files. However, it was not possible in case of all files. If you are an author of such file and you are not mentioned, fell free to contact me and I'll be more than happy to add your name to the list or remove dictionary file upon your request.
+
 Keep in mind, that both comments and names (variables, object) are in Polish. I didn't find enough time and determination to translated them as well. I only translated strings.
 
 **You're only getting project's source code and nothing else! You need to find all missing Delphi components by yourself.**

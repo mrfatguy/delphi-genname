@@ -1,0 +1,46 @@
+[Setup]
+Mode=1
+Author=Tomasz Trejderowski
+CreationDate=2 luty 2001 r.
+Description=Afrykañskie imiona i nazwiska.
+
+[MaleNames]
+Abimbola
+Adeleke
+Amr
+Bliss
+Bright
+Immanuel
+Keele
+Kohn
+Osei
+Ramadan
+Rubben
+Said
+Sifa
+
+[FemaleNames]
+Hannah
+
+[SurNames]
+Asare
+Atia
+Aworah
+Duse
+Gyamfuah
+Hassan
+Kuffor
+Mawiyoo
+Nimoh
+Nyamandu
+Nyasko
+Olisadebe
+Olowofoyeku
+Osae
+Sakyi
+Sekamana
+Tetteh
+Zaki
+
+[TitleNames]
+ 
