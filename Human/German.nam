@@ -1,8 +1,8 @@
 [Setup]
 Mode=1
 Author=Tomasz Trejderowski
-CreationDate=31 stycznia 2001 r.
-Description=Imiona i nazwiska z niemieckiej grupy jêzykowej (Niemcy, Austria i Szwajcaria). W nawiasach podano formy zdrobnia³e lub alternatywne lub alternatywne.
+CreationDate=31 January 2001
+Description=Names from Germany or German speaking countries (Austria Switzerland, German speaking cantons in Canada etc.). Diminutive or alternative pronunciation versions are given in braces.
 
 [MaleNames]
 Adolf

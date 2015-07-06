@@ -1,8 +1,8 @@
 [Setup]
 Mode=1
 Author=Tomasz Trejderowski
-CreationDate=30 wrzeœnia 2008 r.
-Description=Imiona i nazwiska z niderlandzkiej grupy jêzykowej (Holandia i Belgia). W nawiasach podano formy zdrobnia³e lub alternatywne lub alternatywne. Ze wzglêdu na wzajemne przenikania nazwiska skandynawskie i niderlandzkie wystêpuj¹ wspólnie.
+CreationDate=30 September 2008
+Description=Netherlandish names (Holland and Belgium). Diminutive or alternative pronunciation versions are given in braces. You may find Scandinavian (i.e. Dutch) names in these countries as well.
 
 [MaleNames]
 Anton

@@ -1,8 +1,8 @@
 [Setup]
 Mode=1
 Author=Tomasz Trejderowski
-CreationDate=2 luty 2001 r.
-Description=Francuskie imiona i nazwiska. W nawiasach podano formy zdrobnia³e lub alternatywne.
+CreationDate=2 February 2001
+Description=French names. Diminutive or alternative pronunciation versions are given in braces.
 
 [MaleNames]
 Alain

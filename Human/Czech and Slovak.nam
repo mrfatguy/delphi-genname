@@ -1,8 +1,8 @@
 [Setup]
 Mode=1
 Author=Tomasz Trejderowski
-CreationDate=2 lutego 2001 r.
-Description=Czeskie i s³owackie imiona i nazwiska. Formy ¿eñskie ujednolicone (Nováková -> Novák). W nawiasach formy zdrobnia³e lub alternatywne.
+CreationDate=2 February 2001
+Description=Czech and Slovak names. Diminutive or alternative pronunciation versions are given in braces. Female versions are unified (Nováková -> Novák).
 
 [MaleNames]
 Hynek

@@ -8,7 +8,7 @@ This program allows name generation in three different modes. Play a little bit 
 
 Program comes with an extended editor, which allows you to edit, update or change dictionary files in any cases.
 
-Keep in mind that certain dictionary files maybe even twenty years old!
+Names of original databases / dictionary files contens, in order of apperance: Johan Danforth, Laurent Dionisi and Nathalie Hebert. That's all about fantasy names. As for human names, with the exception for two dictionary files for an extinct races (Gauls and Vikings, made by Johan Danforth), I'm myself an author of all these databases. Keep in mind that certain dictionary files maybe even twenty years old!
 
 Where it was possible, I carefully marked author or maker of original database, that I used for creating my own dictionary files. However, it was not possible in case of all files. If you are an author of such file and you are not mentioned, fell free to contact me and I'll be more than happy to add your name to the list or remove dictionary file upon your request.
 

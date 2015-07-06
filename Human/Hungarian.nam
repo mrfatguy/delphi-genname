@@ -1,8 +1,8 @@
 [Setup]
 Mode=1
 Author=Tomasz Trejderowski
-CreationDate=30 wrzeœnia 2008 r.
-Description=Imiona i nazwiska wêgierskie. W nawiasach podano formy zdrobnia³e.
+CreationDate=30 September 2008
+Description=Hungarian names. Diminutive or alternative pronunciation versions are given in braces.
 
 [MaleNames]
 András

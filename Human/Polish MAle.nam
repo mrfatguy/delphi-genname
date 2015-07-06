@@ -1,8 +1,8 @@
 [Setup]
 Mode=2
 Author=Tomasz Trejderowski
-CreationDate=31 stycznia 2001 r.
-Description=Polskie imiona i nazwiska - mê¿czyzni.
+CreationDate=31 January 2001
+Description=Polish male names. Diminutive or alternative pronunciation versions are given in braces.
 
 [Names]
 Adam

@@ -1,8 +1,8 @@
 [Setup]
 Mode=1
 Author=Tomasz Trejderowski
-CreationDate=3 luty 2001 r.
-Description=Imiona i nazwiska Dalekiego Wschodu (Japonia, Korea, Wietnam itp.), bez Chin.
+CreationDate=3 February 2001
+Description=Far east names (Japan, Vietnam, Korea), without China. Note, that in most of these countries you speak second name (surname) as first an first name (given name) as second!
 
 [MaleNames]
 Akihisa

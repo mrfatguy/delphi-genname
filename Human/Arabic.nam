@@ -1,8 +1,8 @@
 [Setup]
 Mode=1
 Author=Tomasz Trejderowski
-CreationDate=2 luty 2001 r.
-Description=Arabskie imiona i nazwiska. Wystêpuje wiele kombinacji (œci¹gniêtych z jakiegoœ s³ownika) oraz kilka nazwisk typowo tureckich, chocia¿ nazwanie Turka Arabem jest obraŸliwe.
+CreationDate=2 February 2001
+Description=Arabic names. Note, that both Arabic and Turkish names are mixed here. However, keep in mind, using "Arabic" or "Muslim" in naming of Turkish man or woman may be very offensive in certain places or situations!
 
 [MaleNames]
 Aban

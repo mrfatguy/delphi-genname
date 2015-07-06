@@ -1,8 +1,8 @@
 [Setup]
 Mode=1
 Author=Tomasz Trejderowski
-CreationDate=31 stycznia 2001 r.
-Description=Imiona i nazwiska z angielskiej grupy jêzykowej. W nawiasach podano formy zdrobnia³e lub alternatywne.
+CreationDate=31 January 2001
+Description=English names. Diminutive or alternative pronunciation versions are given in braces.
 
 [MaleNames]
 Aaron
