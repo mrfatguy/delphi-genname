@@ -22,8 +22,7 @@ object Generator: TGenerator
     Top = 8
     Width = 49
     Height = 57
-    Hint = 'Generuj#Kliknij, aby wygenerowa'#263' nowy zestaw nazw'
-    Caption = 'Generuj'
+    Caption = 'Generate'
     Enabled = False
     Flat = True
     Glyph.Data = {
@@ -232,8 +231,7 @@ object Generator: TGenerator
     Top = 8
     Width = 49
     Height = 57
-    Hint = 'Otw'#243'rz#Otwiera istniej'#261'cy zestaw nazw'
-    Caption = 'Otw'#243'rz'
+    Caption = 'Open'
     Flat = True
     Glyph.Data = {
       36180000424D3618000000000000360000002800000040000000200000000100
@@ -441,8 +439,7 @@ object Generator: TGenerator
     Top = 8
     Width = 49
     Height = 57
-    Hint = 'Edytuj#Przej'#347'cie do edytora definicyjnego'
-    Caption = 'Edytuj'
+    Caption = 'Edit'
     Enabled = False
     Flat = True
     Glyph.Data = {
@@ -651,8 +648,7 @@ object Generator: TGenerator
     Top = 8
     Width = 49
     Height = 57
-    Hint = 'O...#Wy'#347'wietla informacje o programie'
-    Caption = 'O...'
+    Caption = 'About'
     Flat = True
     Glyph.Data = {
       36180000424D3618000000000000360000002800000040000000200000000100
@@ -860,8 +856,7 @@ object Generator: TGenerator
     Top = 8
     Width = 49
     Height = 57
-    Hint = 'Drukuj#Drukuje wygenerowan'#261' list'#281' nazw'
-    Caption = 'Drukuj'
+    Caption = 'Print'
     Enabled = False
     Flat = True
     Glyph.Data = {
@@ -1070,8 +1065,7 @@ object Generator: TGenerator
     Top = 8
     Width = 49
     Height = 57
-    Hint = 'Eksport#Eksportuje wygenerowan'#261' list'#281' nazw do pliku tekstowego'
-    Caption = 'Eksport'
+    Caption = 'Export'
     Enabled = False
     Flat = True
     Glyph.Data = {
@@ -1286,8 +1280,7 @@ object Generator: TGenerator
     Top = 8
     Width = 49
     Height = 57
-    Hint = 'Koniec#Zako'#324'czenie pracy z programem'
-    Caption = 'Koniec'
+    Caption = 'Close'
     Flat = True
     Glyph.Data = {
       36180000424D3618000000000000360000002800000040000000200000000100
@@ -1515,14 +1508,14 @@ object Generator: TGenerator
       Top = 4
       Width = 209
       Height = 36
-      Caption = ' Uwzgl'#281'dniaj cz'#322'ony '
+      Caption = ' Use parts: '
       TabOrder = 0
       object CheckBox1: TCheckBox
         Left = 8
         Top = 14
         Width = 79
         Height = 17
-        Caption = 'pocz'#261'tkowy'
+        Caption = 'initial'
         Checked = True
         State = cbChecked
         TabOrder = 0
@@ -1533,7 +1526,7 @@ object Generator: TGenerator
         Top = 14
         Width = 55
         Height = 17
-        Caption = #322'acznik'
+        Caption = 'connector'
         Checked = True
         State = cbChecked
         TabOrder = 1
@@ -1544,7 +1537,7 @@ object Generator: TGenerator
         Top = 14
         Width = 63
         Height = 17
-        Caption = 'ko'#324'cowy'
+        Caption = 'final'
         Checked = True
         State = cbChecked
         TabOrder = 2
@@ -1565,12 +1558,12 @@ object Generator: TGenerator
       Top = 4
       Width = 180
       Height = 36
-      Caption = ' P'#322'e'#263' '
+      Caption = ' Sex '
       Columns = 2
       ItemIndex = 0
       Items.Strings = (
-        'M'#281#380'czyzna'
-        'Kobieta')
+        'Male'
+        'Female')
       TabOrder = 0
       OnClick = RadioGroup1Click
     end
@@ -1579,14 +1572,14 @@ object Generator: TGenerator
       Top = 4
       Width = 225
       Height = 36
-      Caption = ' Opcje '
+      Caption = ' Options '
       TabOrder = 1
       object CheckBox6: TCheckBox
         Left = 8
         Top = 14
         Width = 209
         Height = 17
-        Caption = 'Uwzgl'#281'dniaj tytu'#322'y i przedrostki rodowe'
+        Caption = 'Include titles and prefixes'
         Checked = True
         State = cbChecked
         TabOrder = 0
@@ -1606,7 +1599,7 @@ object Generator: TGenerator
       Top = 16
       Width = 191
       Height = 13
-      Caption = 'Brak opcji specyficznych dla tego trybu.'
+      Caption = 'There are no specific options for this mode'
     end
   end
   object List: TListBox
@@ -1635,7 +1628,7 @@ object Generator: TGenerator
       Top = 32
       Width = 93
       Height = 17
-      Caption = 'Autor:'
+      Caption = 'Author:'
       TabOrder = 0
     end
     object Panel7: TPanel
@@ -1643,7 +1636,7 @@ object Generator: TGenerator
       Top = 50
       Width = 93
       Height = 17
-      Caption = 'Tryb:'
+      Caption = 'Mode:'
       TabOrder = 1
     end
     object Panel8: TPanel
@@ -1651,7 +1644,7 @@ object Generator: TGenerator
       Top = 68
       Width = 93
       Height = 17
-      Caption = 'Data utworzenia:'
+      Caption = 'Creation date:'
       TabOrder = 2
     end
     object Panel9: TPanel
@@ -1720,7 +1713,7 @@ object Generator: TGenerator
       Top = 86
       Width = 573
       Height = 17
-      Caption = 'Brak danych o definicjach'
+      Caption = 'Dictionary information not available'
       Font.Charset = EASTEUROPE_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -1756,7 +1749,7 @@ object Generator: TGenerator
       Top = 5
       Width = 135
       Height = 13
-      Caption = 'Liczba generowanych nazw:'
+      Caption = 'Number of generated names:'
     end
     object spCount: TSpinEdit
       Left = 144
@@ -1774,7 +1767,7 @@ object Generator: TGenerator
       Top = 3
       Width = 130
       Height = 17
-      Caption = 'Pomi'#324' powtarzaj'#261'ce si'#281
+      Caption = 'Skip repeated'
       Checked = True
       Enabled = False
       State = cbChecked
@@ -1785,7 +1778,7 @@ object Generator: TGenerator
       Top = 3
       Width = 128
       Height = 17
-      Caption = 'Posortuj alfabetycznie'
+      Caption = 'Sort alphabetically'
       Checked = True
       Enabled = False
       State = cbChecked
@@ -1795,9 +1788,9 @@ object Generator: TGenerator
   end
   object OpenDialog: TOpenDialog
     DefaultExt = '*.nam'
-    Filter = 'Pliki generatora imion (*.nam)|*.nam|Wszystkie pliki (*.*)|*.*'
+    Filter = 'GenName files (*.nam)|*.nam|All files (*.*)|*.*'
     Options = [ofHideReadOnly, ofPathMustExist, ofFileMustExist, ofNoNetworkButton, ofEnableSizing]
-    Title = 'Otw'#243'rz...'
+    Title = 'Open...'
     Left = 40
     Top = 272
   end
@@ -1807,8 +1800,8 @@ object Generator: TGenerator
   end
   object SaveDialog1: TSaveDialog
     DefaultExt = '*.txt'
-    Filter = 'Pliki tekstowe (*.txt)|*.txt|Wszystkie pliki (*.*)|*.*'
-    Title = 'Eksportuj do pliku...'
+    Filter = 'Text files (*.txt)|*.txt|All files (*.*)|*.*'
+    Title = 'Export...'
     Left = 72
     Top = 272
   end

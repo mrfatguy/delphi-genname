@@ -2,7 +2,7 @@ object InfoForm: TInfoForm
   Left = 232
   Top = 106
   BorderStyle = bsDialog
-  Caption = 'O programie...'
+  Caption = 'About...'
   ClientHeight = 337
   ClientWidth = 652
   Color = clWhite
@@ -763,7 +763,7 @@ object InfoForm: TInfoForm
     Top = 230
     Width = 370
     Height = 16
-    Caption = 'Ten program jest rozpowszechniany na licencji freeware.'
+    Caption = 'This program ships under MIT License.'
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -778,7 +778,7 @@ object InfoForm: TInfoForm
     Width = 450
     Height = 23
     AutoSize = False
-    Caption = 'GenName 2.00 - Generator imion, nazwisk i nazw...'
+    Caption = 'GenName 2.00 - Names and titles generator...'
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clWindowText
     Font.Height = -19
@@ -794,10 +794,9 @@ object InfoForm: TInfoForm
     Height = 64
     AutoSize = False
     Caption = 
-      'Ten prosty program pozwala na generowanie nazw, pseudonim'#243'w, imi' +
-      'on oraz nazwisk. Mo'#380'e by'#263' przydatny graczom komputerowym, cierpi' +
-      #261'cym na chwilo- wy brak inwencji w wymy'#347'laniu nazw dla swoich bo' +
-      'hater'#243'w. Mo'#380'e te'#380' przyda'#263' si'#281' pisarzom oraz... rodzicom! :)'
+      'This simple program allows you to generate names and aliases. It mayb' +
+      'e useful to game players, who suffer from temporal lack of invention. It m' +
+      'may also be useful to poetry and prose writers and to... parents? :)'
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -1394,10 +1393,8 @@ object InfoForm: TInfoForm
     Width = 351
     Height = 13
     Cursor = crHandPoint
-    Hint = 'Kliknij tutaj, aby przej'#347#263' do mojej strony internetowej.'
-    Caption = 
-      'Copyright '#169' 2008 by Tomasz Trejderowski. Wszelkie prawa zastrze'#380 +
-      'one!'
+    Hint = 'Click to visit my webpage'
+    Caption = 'Copyright '#169' 2008 by Tomasz Trejderowski'
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -1415,10 +1412,10 @@ object InfoForm: TInfoForm
     Height = 64
     AutoSize = False
     Caption = 
-      'Bazy danych (podstawa do generacji) powstawa'#322'y na przestrzeni ki' +
-      'l- ku lat i podstawie tak wielu '#378'r'#243'de'#322', '#380'e po prostu nie spos'#243'b ' +
-      'wymieni'#263' ich tu wszystkich. Je'#347'li komu'#347' nie z'#322'o'#380'y'#322'em z tego powo' +
-      'du podzi'#281'ko- wania, wyra'#380'am ubolewanie i prosz'#281' o zrozumienie!'
+      'Dictionary files, that are used in names generation process, were cre' +
+      'ated during so long period of time (many, many years!), that is is virtually impossible t' +
+      'o name all the authors. If you are one of the forgotten and feel offended by this, please acce' +
+      'pt my sincere apologies or contact me to fix this problem!'
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clRed
     Font.Height = -13

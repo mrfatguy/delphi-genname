@@ -120,7 +120,7 @@ begin
 jmpHere:
         if not IsOK then
         begin
-                Application.MessageBox(PChar(FileNam+chr(13)+'To nie jest prawid³owy plik generatora !!!'),'B³¹d!',MB_OK+MB_ICONERROR+MB_DEFBUTTON1);
+                Application.MessageBox(PChar(FileNam+chr(13)+'This is NOT a valid GenName file!'),'Error!',MB_OK+MB_ICONERROR+MB_DEFBUTTON1);
                 Panel3.Caption:='';
                 Panel9.Caption:='';
                 Panel10.Caption:='';
@@ -221,7 +221,7 @@ jmpHere:
         Panel11.Caption:=ini.ReadString('Setup','CreationDate','');
         Label1.Caption:=ini.ReadString('Setup','Description','');
         ini.Free;
-        Panel15.Caption:='Liczba definicji w tym pliku pozwala na wygenerowanie '+IntToStr(c)+' kombinacji.';
+        Panel15.Caption:='This dictionary file allows you to generate up to '+IntToStr(c)+' combinations.';
         if CanGenerate=False then
         begin
                 BitBtn1.Enabled:=False;
@@ -233,8 +233,8 @@ jmpHere:
                 Panel13.Hide;
                 Panel14.Hide;
                 Panel16.Show;
-                Panel15.Caption:='Brak danych o definicjach - listy s¹ puste';
-                Application.MessageBox('To jest prawid³owy plik generatora, ale jedna z jego list jest pusta! Mo¿na dokonaæ jego edycji, aby wype³niæ puste listy, ale dopóki przynajmniej jedna z list bêdzie pusta, opcja generacji bêdzie nieaktywna!','Ostrze¿enie!',MB_OK+MB_ICONWARNING+MB_DEFBUTTON1);
+                Panel15.Caption:='No definition data -- Lists are empty';
+                Application.MessageBox('This seems to be a valid GenName file, but at least one of dictionary lists is empty. You can edit this file to fill empty lists, but until there is at least one list with no items, generation will not be possible!','Warning!',MB_OK+MB_ICONWARNING+MB_DEFBUTTON1);
         end;
 end;
 
@@ -292,14 +292,14 @@ end;
 
 procedure TGenerator.Button1Click(Sender: TObject);
 begin
-	OpenDialog.InitialDir:=ExtractFilePath(Application.ExeName)+'Definicje';
+	OpenDialog.InitialDir:=ExtractFilePath(Application.ExeName);
         if OpenDialog.Execute then
                 if OpenFile(OpenDialog.FileName)=True then BitBtn1Click(self);
 end;
 
 procedure TGenerator.RadioGroup1Click(Sender: TObject);
 begin
-	Panel15.Caption:='Liczba definicji w tym pliku pozwala na wygenerowanie '+IntToStr(cPos[RadioGroup1.ItemIndex])+' kombinacji.';
+	Panel15.Caption:='This dictionary file allows you to generate up to '+IntToStr(cPos[RadioGroup1.ItemIndex])+' combinations.';
 	BitBtn1Click(self);
 end;
 
@@ -320,7 +320,7 @@ begin
         Pen.Color:=clBlack;
         MoveTo(0,0);
 end;
-Printer.Canvas.TextOut(20,20,Label1.Caption+' Autor pliku definicyjnego: '+Panel9.Caption+'. Liczba drukowanych pozycji: '+IntToStr(List.Items.Count)+'. Strona: 1');
+Printer.Canvas.TextOut(20,20,Label1.Caption+' Dictionary file author: '+Panel9.Caption+'. Number of printed items: '+IntToStr(List.Items.Count)+'. Page: 1');
 Printer.Canvas.MoveTo(20,68);
 Printer.Canvas.LineTo(Printer.PageWidth-20,68);
 pag:=1;
@@ -337,7 +337,7 @@ begin
                 begin
                         Printer.NewPage;
                         Inc(pag);
-                        Printer.Canvas.TextOut(20,20,Label1.Caption+' Autor pliku definicyjnego: '+Panel9.Caption+'. Liczba drukowanych pozycji: '+IntToStr(List.Items.Count)+'. Strona: '+IntToStr(pag));
+                        Printer.Canvas.TextOut(20,20,Label1.Caption+' Dictionary file author: '+Panel9.Caption+'. Number of printed items: '+IntToStr(List.Items.Count)+'. Page: '+IntToStr(pag));
                         Printer.Canvas.MoveTo(20,68);
                         Printer.Canvas.LineTo(Printer.PageWidth-20,68);
                         y:=80;
@@ -348,8 +348,8 @@ begin
 end;
 Printer.Canvas.MoveTo(20,y+36);
 Printer.Canvas.LineTo(Printer.PageWidth-20,y+36);
-Printer.Canvas.TextOut(20,y+48,'Wygenerowano i wydrukowano przy pomocy programu GenName 1.10. OdwiedŸ stronê: http://www.trejderowski.qs.pl/');
-if Application.MessageBox(PChar('Iloœæ stron do wydrukowania: '+IntToStr(pag)+chr(13)+''+chr(13)+'Drukowaæ ???'),'PotwierdŸ...',MB_YESNO+MB_ICONQUESTION+MB_DEFBUTTON2)=ID_NO then Printer.Abort else Printer.EndDoc;
+Printer.Canvas.TextOut(20,y+48,'Generated and printed using GenName 2.00. Visit: https://github.com/trejder/delphi-genname for details');
+if Application.MessageBox(PChar('Number of pages to be printed: '+IntToStr(pag)+chr(13)+''+chr(13)+'Print?'),'Confirm...',MB_YESNO+MB_ICONQUESTION+MB_DEFBUTTON2)=ID_NO then Printer.Abort else Printer.EndDoc;
 end;
 
 procedure TGenerator.BitBtn12Click(Sender: TObject);

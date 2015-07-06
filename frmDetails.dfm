@@ -3,7 +3,7 @@ object Details: TDetails
   Top = 103
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
-  Caption = 'Podaj informacje szczegó³owe...'
+  Caption = 'Detailed information...'
   ClientHeight = 234
   ClientWidth = 296
   Color = clBtnFace
@@ -24,8 +24,8 @@ object Details: TDetails
     Height = 41
     AutoSize = False
     Caption = 
-      'Powy¿sze dane mo¿na zmieniæ tylko w tym momencie !!! Po utworzen' +
-      'iu i zapisaniu pliku, ich powtórna edycja nie bêdzie mo¿liwa.'
+      'You can provided this information only in this moment! After cre' +
+      'ating nad saving the file, another edit will not be possible.'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -40,7 +40,7 @@ object Details: TDetails
     Top = 144
     Width = 56
     Height = 13
-    Caption = 'Uwaga !!!'
+    Caption = 'Warning!'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -53,7 +53,7 @@ object Details: TDetails
     Top = 4
     Width = 225
     Height = 17
-    Caption = 'Szczegó³owe informacje o pliku:'
+    Caption = 'File details:'
     TabOrder = 7
   end
   object Panel6: TPanel
@@ -61,7 +61,7 @@ object Details: TDetails
     Top = 50
     Width = 93
     Height = 17
-    Caption = 'Autor:'
+    Caption = 'Author:'
     TabOrder = 8
   end
   object Panel7: TPanel
@@ -69,7 +69,7 @@ object Details: TDetails
     Top = 74
     Width = 93
     Height = 17
-    Caption = 'Tryb:'
+    Caption = 'Mode:'
     TabOrder = 9
   end
   object Panel8: TPanel
@@ -77,7 +77,7 @@ object Details: TDetails
     Top = 98
     Width = 93
     Height = 17
-    Caption = 'Data utworzenia:'
+    Caption = 'Creation date:'
     TabOrder = 10
   end
   object Panel12: TPanel
@@ -85,7 +85,7 @@ object Details: TDetails
     Top = 122
     Width = 93
     Height = 17
-    Caption = 'Krótki opis:'
+    Caption = 'Short description:'
     TabOrder = 11
   end
   object BitBtn1: TBitBtn
@@ -93,7 +93,7 @@ object Details: TDetails
     Top = 206
     Width = 137
     Height = 25
-    Caption = 'Utwórz nowy plik'
+    Caption = 'Create new file'
     Enabled = False
     TabOrder = 5
     Kind = bkOK
@@ -103,7 +103,7 @@ object Details: TDetails
     Top = 206
     Width = 137
     Height = 25
-    Caption = 'Anuluj...'
+    Caption = 'Cancel'
     TabOrder = 6
     Kind = bkCancel
   end
@@ -174,8 +174,8 @@ object Details: TDetails
   end
   object SaveDialog1: TSaveDialog
     DefaultExt = '*.nam'
-    Filter = 'Pliki generatora imion (*.nam)|*.nam|Wszystkie pliki (*.*)|*.*'
+    Filter = 'GenName files (*.nam)|*.nam|All files (*.*)|*.*'
     Options = [ofOverwritePrompt, ofHideReadOnly, ofPathMustExist, ofEnableSizing]
-    Title = 'Zapisz jako...'
+    Title = 'Save as...'
   end
 end

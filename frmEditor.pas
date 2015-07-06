@@ -152,10 +152,10 @@ case mode of
                 pnlB.Width := 195;
                 pnlC.Width := 195;
                 pnlD.Width := 195;
-                cap1.Caption:='Imiona mêskie:';
-                cap2.Caption:='Imiona ¿eñskie:';
-                cap3.Caption:='Nazwiska:';
-                cap4.Caption := 'Tytu³y i przedrostki:';
+                cap1.Caption:='Male names:';
+                cap2.Caption:='Female names:';
+                cap3.Caption:='Surnames:';
+                cap4.Caption := 'Titles and prefixes:';
                 for b:=tmpStrings.IndexOf('[MaleNames]')+1 to tmpStrings.IndexOf('[FemaleNames]')-2 do List1.Items.Add(tmpStrings.Strings[b]);
                 for b:=tmpStrings.IndexOf('[FemaleNames]')+1 to tmpStrings.IndexOf('[SurNames]')-2 do List2.Items.Add(tmpStrings.Strings[b]);
                 for b:=tmpStrings.IndexOf('[SurNames]')+1 to tmpStrings.IndexOf('[TitleNames]')-2 do List3.Items.Add(tmpStrings.Strings[b]);
@@ -170,8 +170,8 @@ case mode of
                 pnlD.Show;
                 pnlA.Width := 390;
                 pnlD.Width := 390;
-                cap1.Caption:='Imiona:';
-                cap3.Caption:='Nazwiska:';
+                cap1.Caption:='Names:';
+                cap3.Caption:='Surnames:';
                 for b:=tmpStrings.IndexOf('[Names]')+1 to tmpStrings.IndexOf('[SurNames]')-2 do List1.Items.Add(tmpStrings.Strings[b]);
                 for b:=tmpStrings.IndexOf('[SurNames]')+1 to tmpStrings.Count-1 do List3.Items.Add(tmpStrings.Strings[b]);
                 tmpStrings.Free;
@@ -185,20 +185,19 @@ case mode of
                 pnlA.Width := 260;
                 pnlB.Width := 260;
                 pnlD.Width := 260;
-                cap1.Caption:='Cz³on pocz¹tkowy (imiê):';
-                cap2.Caption:='£¹cznik (tytu³ rodowy):';
-                cap3.Caption:='Cz³on koñcowy (nazwisko):';
+                cap1.Caption:='Initial part (i.e. name):';
+                cap2.Caption:='Connector (i.e. family title):';
+                cap3.Caption:='Final part (i.e. surname):';
                 for b:=tmpStrings.IndexOf('[Begin]')+1 to tmpStrings.IndexOf('[Middle]')-2 do List1.Items.Add(tmpStrings.Strings[b]);
                 for b:=tmpStrings.IndexOf('[Middle]')+1 to tmpStrings.IndexOf('[End]')-2 do List2.Items.Add(tmpStrings.Strings[b]);
                 for b:=tmpStrings.IndexOf('[End]')+1 to tmpStrings.Count-1 do List3.Items.Add(tmpStrings.Strings[b]);
                 tmpStrings.Free;
         end;
 end;
-cnt1.Caption:='Iloœæ pozycji: '+IntToStr(List1.Items.Count);
-cnt2.Caption:='Iloœæ pozycji: '+IntToStr(List2.Items.Count);
-cnt3.Caption:='Iloœæ pozycji: '+IntToStr(List3.Items.Count);
-cnt4.Caption:='Iloœæ pozycji: '+IntToStr(List4.Items.Count);
-//CenterControl(Edytor);
+cnt1.Caption:='Items count: '+IntToStr(List1.Items.Count);
+cnt2.Caption:='Items count: '+IntToStr(List2.Items.Count);
+cnt3.Caption:='Items count: '+IntToStr(List3.Items.Count);
+cnt4.Caption:='Items count: '+IntToStr(List4.Items.Count);
 end;
 
 procedure TEdytor.Edit1KeyUp(Sender: TObject; var Key: Word;
@@ -219,34 +218,34 @@ begin
                 begin
                         sts1.Font.Color:=clRed;
                         sts1.Font.Style:=[fsBold];
-                        if mode=1 then sts1.Caption:='Podane imiê mêskie ju¿ istnieje!';
-                        if mode=2 then sts1.Caption:='Podane imiê ju¿ istnieje!';
-                        if mode=3 then sts1.Caption:='Podany cz³on pocz¹tkowy ju¿ istnieje!';
+                        if mode=1 then sts1.Caption:='Entered male name already exists!';
+                        if mode=2 then sts1.Caption:='Entered name already exists!';
+                        if mode=3 then sts1.Caption:='Entered initial part already exists!';
                         Edit1.SelectAll;
                         Timer1.Enabled:=True;
                         exit;
                 end;
         end;
         List1.Items.Add(Edit1.Text);
-        cnt1.Caption:='Iloœæ pozycji: '+IntToStr(List1.Items.Count);
+        cnt1.Caption:='Items count: '+IntToStr(List1.Items.Count);
         sts1.Font.Color:=clBlack;
         sts1.Font.Style:=[];
-        if mode=1 then sts1.Caption:='Dodano nowe imiê mêskie...';
-        if mode=2 then sts1.Caption:='Dodano nowe imiê...';
-        if mode=3 then sts1.Caption:='Dodano nowy cz³on pocz¹tkowy...';
+        if mode=1 then sts1.Caption:='New male name added...';
+        if mode=2 then sts1.Caption:='New name added...';
+        if mode=3 then sts1.Caption:='New inital part addeed...';
         Timer1.Enabled:=True;
         Modifited:=True;
         Edit1.Text:='';
 end
 else
 begin
-  for I := 0 to List1.Items.Count -1 do  // analizuj wszystkie pozycje
+  for I := 0 to List1.Items.Count -1 do
   begin
-    Found := Pos(Edit1.Text, List1.Items[i]); // szukaj ciagu znakow
+    Found := Pos(Edit1.Text, List1.Items[i]);
     if (Found > 0) and (List1.Items[i][1] = Edit1.Text[1]) then
     begin
-      List1.ItemIndex := i; // jezeli znaleziono to zaznacz
-      Break; // i przerwij dzialanie petli
+      List1.ItemIndex := i;
+      Break;
     end;
   end;
 end;
@@ -269,8 +268,8 @@ begin
                 begin
                         sts1.Font.Color:=clRed;
                         sts1.Font.Style:=[fsBold];
-                        if mode=1 then sts1.Caption:='Podane imiê ju¿ istnieje na liœcie imion ¿eñskich!';
-                        if mode=3 then sts1.Caption:='Podany ³¹cznik ju¿ istnieje!';
+                        if mode=1 then sts1.Caption:='Entered name already exists on list of female names!';
+                        if mode=3 then sts1.Caption:='Entered connector already exists!';
                         Edit2.SelectAll;
                         Timer1.Enabled:=True;
                         exit;
@@ -279,22 +278,22 @@ begin
         sts1.Font.Color:=clBlack;
         sts1.Font.Style:=[];
         List2.Items.Add(Edit2.Text);
-        cnt2.Caption:='Iloœæ pozycji: '+IntToStr(List2.Items.Count);
-        if mode=1 then sts1.Caption:='Dodano nowe imiê ¿eñskie...';
-        if mode=3 then sts1.Caption:='Dodano nowy ³¹cznik...';
+        cnt2.Caption:='Items count: '+IntToStr(List2.Items.Count);
+        if mode=1 then sts1.Caption:='New female name added...';
+        if mode=3 then sts1.Caption:='New connector added...';
         Timer1.Enabled:=True;
         Modifited:=True;
         Edit2.Text:='';
 end
 else
 begin
-  for I := 0 to List2.Items.Count -1 do  // analizuj wszystkie pozycje
+  for I := 0 to List2.Items.Count -1 do
   begin
-    Found := Pos(Edit2.Text, List2.Items[i]); // szukaj ciagu znakow
+    Found := Pos(Edit2.Text, List2.Items[i]);
     if (Found > 0) and (List2.Items[i][1] = Edit2.Text[1]) then
     begin
-      List2.ItemIndex := i; // jezeli znaleziono to zaznacz
-      Break; // i przerwij dzialanie petli
+      List2.ItemIndex := i;
+      Break;
     end;
   end;
 end;
@@ -316,32 +315,32 @@ begin
                 begin
                         sts1.Font.Color:=clRed;
                         sts1.Font.Style:=[fsBold];
-                        if (mode=1) or (mode=2) then sts1.Caption:='Podane nazwisko ju¿ istnieje!';
-                        if mode=3 then sts1.Caption:='Podany cz³on koñcowy ju¿ istnieje!';
+                        if (mode=1) or (mode=2) then sts1.Caption:='Entered surname already exists!';
+                        if mode=3 then sts1.Caption:='Entered final part already exists!';
                         Edit3.SelectAll;
                         Timer1.Enabled:=True;
                         exit;
                 end;
         end;
         List3.Items.Add(Edit3.Text);
-        cnt3.Caption:='Iloœæ pozycji: '+IntToStr(List3.Items.Count);
+        cnt3.Caption:='Items count: '+IntToStr(List3.Items.Count);
         sts1.Font.Color:=clBlack;
         sts1.Font.Style:=[];
-        if (mode=1) or (mode=2) then sts1.Caption:='Dodano nowe nazwisko...';
-        if mode=3 then sts1.Caption:='Dodano nowy cz³on koñcowy...';
+        if (mode=1) or (mode=2) then sts1.Caption:='New surname added...';
+        if mode=3 then sts1.Caption:='New final part added...';
         Timer1.Enabled:=True;
         Modifited:=True;
         Edit3.Text:='';
 end
 else
 begin
-  for I := 0 to List3.Items.Count -1 do  // analizuj wszystkie pozycje
+  for I := 0 to List3.Items.Count -1 do
   begin
-    Found := Pos(Edit3.Text, List3.Items[i]); // szukaj ciagu znakow
+    Found := Pos(Edit3.Text, List3.Items[i]);
     if (Found > 0) and (List3.Items[i][1] = Edit3.Text[1]) then
     begin
-      List3.ItemIndex := i; // jezeli znaleziono to zaznacz
-      Break; // i przerwij dzialanie petli
+      List3.ItemIndex := i;
+      Break;
     end;
   end;
 end;
@@ -376,7 +375,7 @@ case mode of
                 tmpLins.SaveToFile(Panel1.Caption);
                 sts1.Font.Color:=clBlack;
                 sts1.Font.Style:=[];
-                sts1.Caption:='Plik zosta³ prawid³owo zapisany...';
+                sts1.Caption:='File was saved...';
                 Timer1.Enabled:=True;
                 tmpLins.Free;
         end;
@@ -390,7 +389,7 @@ case mode of
                 tmpLins.SaveToFile(Panel1.Caption);
                 sts1.Font.Color:=clBlack;
                 sts1.Font.Style:=[];
-                sts1.Caption:='Plik zosta³ prawid³owo zapisany...';
+                sts1.Caption:='File was saved...';
                 Timer1.Enabled:=True;
                 tmpLins.Free;
         end;
@@ -407,7 +406,7 @@ case mode of
                 tmpLins.SaveToFile(Panel1.Caption);
                 sts1.Font.Color:=clBlack;
                 sts1.Font.Style:=[];
-                sts1.Caption:='Plik zosta³ prawid³owo zapisany...';
+                sts1.Caption:='File was saved...';
                 Timer1.Enabled:=True;
                 tmpLins.Free;
         end;
@@ -427,7 +426,7 @@ var
 begin
         if Modifited then
         begin
-                answ:=Application.MessageBox(PChar('Dokonano zmian w pliku definicyjnym, ale nie zosta³y one zapisane! Je¿eli zamkniesz to okno, wszystkie niezapisane zmiany zostan¹ utracone!'+chr(13)+''+chr(13)+'Zapisaæ zmiany ???'),'PotwierdŸ...',MB_YESNOCANCEL+MB_ICONQUESTION+MB_DEFBUTTON1);
+                answ:=Application.MessageBox(PChar('You have an unsaved changed! If you close this window, all of them will be lost!'+chr(13)+''+chr(13)+'Save changes now?'),'Confirm...',MB_YESNOCANCEL+MB_ICONQUESTION+MB_DEFBUTTON1);
                 if answ=IDNO then exit;
                 if answ=IDCANCEL then Action:=caNone;
                 if answ=IDYES then
@@ -471,15 +470,15 @@ end;
 procedure TEdytor.mnuDeleteClick(Sender: TObject);
 begin
 if tmlList.ItemIndex=-1 then exit;
-if Application.MessageBox(PChar('Pozycja '+IntToStr(tmlList.ItemIndex+1)+': "'+tmlList.Items.Strings[tmlList.ItemIndex]+'"'+chr(13)+''+chr(13)+'Czy napewno chcesz usun¹æ ???'),'PotwierdŸ...',MB_YESNO+MB_ICONQUESTION+MB_DEFBUTTON2)=IDYES then
+if Application.MessageBox(PChar('Item '+IntToStr(tmlList.ItemIndex+1)+': "'+tmlList.Items.Strings[tmlList.ItemIndex]+'"'+chr(13)+''+chr(13)+'Are you sure, you want to delete it?'),'Confirm...',MB_YESNO+MB_ICONQUESTION+MB_DEFBUTTON2)=IDYES then
 begin
         tmlList.Items.Delete(tmlList.ItemIndex);
         Modifited:=True;
 end;
-cnt1.Caption:='Iloœæ pozycji: '+IntToStr(List1.Items.Count);
-cnt2.Caption:='Iloœæ pozycji: '+IntToStr(List2.Items.Count);
-cnt3.Caption:='Iloœæ pozycji: '+IntToStr(List3.Items.Count);
-cnt4.Caption:='Iloœæ pozycji: '+IntToStr(List4.Items.Count);
+cnt1.Caption:='Items count: '+IntToStr(List1.Items.Count);
+cnt2.Caption:='Items count: '+IntToStr(List2.Items.Count);
+cnt3.Caption:='Items count: '+IntToStr(List3.Items.Count);
+cnt4.Caption:='Items count: '+IntToStr(List4.Items.Count);
 end;
 
 procedure TEdytor.BitBtn2Click(Sender: TObject);
@@ -504,7 +503,6 @@ Panel1.Caption:=Details.Panel3.Caption;
 List1.Items.Clear;
 List2.Items.Clear;
 List3.Items.Clear;
-//Modifited:=True;
 BitBtn3Click(self);
 FormShow(self);
 end;
@@ -534,17 +532,17 @@ if tmp='' then goto lHere;
         Inc(lDod);
 lHere:
 end;
-if lDod=lAll then Application.MessageBox('Dodano wszystkie pozycje wprowadzone przez u¿ytkownika.','Podsumowanie...',MB_OK+MB_ICONQUESTION+MB_DEFBUTTON1);
+if lDod=lAll then Application.MessageBox('All entered items has been added.','Summary...',MB_OK+MB_ICONQUESTION+MB_DEFBUTTON1);
 if lDod=0 then
 begin
-        Application.MessageBox('Nie dodano ¿adnych nowych pozycji, gdy¿ wszystkie wprowadzone przez u¿ytkownika ju¿ istniej¹ na liœcie...','Podsumowanie...',MB_OK+MB_ICONQUESTION+MB_DEFBUTTON1);
+        Application.MessageBox('No new items were added, because all entered items already exists on the list...','Summary...',MB_OK+MB_ICONQUESTION+MB_DEFBUTTON1);
         exit;
 end;
-if lDod<>lAll then Application.MessageBox(PChar('Wprowadzono '+IntToStr(lAll)+' pozycji przeznaczonych do dodania. Z tego dodano '+IntToStr(lDod)+' pozycji. Pozosta³e zosta³y odrzucone, gdy¿ ju¿ wystêpuj¹ na liœcie...'),'Podsumowanie...',MB_OK+MB_ICONQUESTION+MB_DEFBUTTON1);
-cnt1.Caption:='Iloœæ pozycji: '+IntToStr(List1.Items.Count);
-cnt2.Caption:='Iloœæ pozycji: '+IntToStr(List2.Items.Count);
-cnt3.Caption:='Iloœæ pozycji: '+IntToStr(List3.Items.Count);
-cnt4.Caption:='Iloœæ pozycji: '+IntToStr(List4.Items.Count);
+if lDod<>lAll then Application.MessageBox(PChar('You have entered '+IntToStr(lAll)+' item(s) to be added. Out of this '+IntToStr(lDod)+' item(s) were actually added to the list. Other items were ignored, because already exists on the list...'),'Podsumowanie...',MB_OK+MB_ICONQUESTION+MB_DEFBUTTON1);
+cnt1.Caption:='Items count: '+IntToStr(List1.Items.Count);
+cnt2.Caption:='Items count: '+IntToStr(List2.Items.Count);
+cnt3.Caption:='Items count: '+IntToStr(List3.Items.Count);
+cnt4.Caption:='Items count: '+IntToStr(List4.Items.Count);
 Modifited:=True;
 end;
 
@@ -553,7 +551,7 @@ var
         chan: String;
 begin
 if tmlList.ItemIndex=-1 then exit;
-chan:=InputBox('Modyfikacja pozycji', 'Podaj nowe brzmienie pozycji numer '+IntToStr(tmlList.ItemIndex+1)+'...',tmlList.Items.Strings[tmlList.ItemIndex]);
+chan:=InputBox('Modify an item', 'Enter new value for item nr '+IntToStr(tmlList.ItemIndex+1)+'...',tmlList.Items.Strings[tmlList.ItemIndex]);
 tmlList.Items.Strings[tmlList.ItemIndex]:=chan;
 Modifited:=True;
 end;
@@ -575,7 +573,7 @@ begin
                 begin
                         sts1.Font.Color:=clRed;
                         sts1.Font.Style:=[fsBold];
-                        if mode=1 then sts1.Caption:='Podany tytu³ ju¿ istnieje na liœcie!';
+                        if mode=1 then sts1.Caption:='Entered title (prefix) already exists!';
                         Edit4.SelectAll;
                         Timer1.Enabled:=True;
                         exit;
@@ -584,21 +582,21 @@ begin
         sts1.Font.Color:=clBlack;
         sts1.Font.Style:=[];
         List4.Items.Add(Edit4.Text);
-        cnt4.Caption:='Iloœæ pozycji: '+IntToStr(List4.Items.Count);
-        if mode=1 then sts1.Caption:='Dodano nowy tytu³...';
+        cnt4.Caption:='Items count: '+IntToStr(List4.Items.Count);
+        if mode=1 then sts1.Caption:='New title (prefix) added...';
         Timer1.Enabled:=True;
         Modifited:=True;
         Edit4.Text:='';
 end
 else
 begin
-  for I := 0 to List4.Items.Count -1 do  // analizuj wszystkie pozycje
+  for I := 0 to List4.Items.Count -1 do
   begin
-    Found := Pos(Edit4.Text, List4.Items[i]); // szukaj ciagu znakow
+    Found := Pos(Edit4.Text, List4.Items[i]);
     if (Found > 0) and (List4.Items[i][1] = Edit4.Text[1]) then
     begin
-      List4.ItemIndex := i; // jezeli znaleziono to zaznacz
-      Break; // i przerwij dzialanie petli
+      List4.ItemIndex := i;
+      Break;
     end;
   end;
 end;

@@ -3,7 +3,7 @@ object Edytor: TEdytor
   Top = 27
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = 'GenName 1.00 - Edytor plików definicyjnych'
+  Caption = 'GenName 1.00 - Dictionary files editor'
   ClientHeight = 680
   ClientWidth = 800
   Color = clBtnFace
@@ -99,7 +99,7 @@ object Edytor: TEdytor
       Top = 28
       Width = 120
       Height = 25
-      Caption = 'Utwórz nowy...'
+      Caption = 'Create new...'
       TabOrder = 1
       TabStop = False
       OnClick = BitBtn2Click
@@ -118,7 +118,7 @@ object Edytor: TEdytor
       Top = 28
       Width = 120
       Height = 25
-      Caption = 'Zapisz zmiany'
+      Caption = 'Save changes'
       TabOrder = 2
       TabStop = False
       OnClick = BitBtn3Click
@@ -139,7 +139,7 @@ object Edytor: TEdytor
       Height = 25
       Anchors = [akTop, akRight]
       Cancel = True
-      Caption = 'Zamknij to okno'
+      Caption = 'Close window'
       TabOrder = 3
       TabStop = False
       OnClick = BitBtn1Click
@@ -199,7 +199,7 @@ object Edytor: TEdytor
         Alignment = taCenter
         Anchors = [akLeft, akTop, akRight]
         AutoSize = False
-        Caption = 'Imiona mêskie:'
+        Caption = 'Male names:'
         Font.Charset = EASTEUROPE_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -215,7 +215,7 @@ object Edytor: TEdytor
         Alignment = taCenter
         Anchors = [akLeft, akRight, akBottom]
         AutoSize = False
-        Caption = '0 pozycji'
+        Caption = '0 items'
         Font.Charset = EASTEUROPE_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -248,8 +248,8 @@ object Edytor: TEdytor
         Width = 180
         Height = 21
         Hint = 
-          'Kliknij prawym klawiszem myszki, aby wprowadziæ nietypowy znak d' +
-          'iakrytyczny (np. z alfabetu niemieckiego lub francuskiego)'
+          'Click with right mouse button to enter a non-Latin character (i.' +
+          'e. from German or French alphabet)'
         Anchors = [akLeft, akRight, akBottom]
         ParentShowHint = False
         PopupMenu = popEdit
@@ -281,7 +281,7 @@ object Edytor: TEdytor
         Alignment = taCenter
         Anchors = [akLeft, akTop, akRight]
         AutoSize = False
-        Caption = 'Imiona ¿eñskie:'
+        Caption = 'Female names:'
         Font.Charset = EASTEUROPE_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -297,7 +297,7 @@ object Edytor: TEdytor
         Alignment = taCenter
         Anchors = [akLeft, akRight, akBottom]
         AutoSize = False
-        Caption = '0 pozycji'
+        Caption = '0 items'
         Font.Charset = EASTEUROPE_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -330,8 +330,8 @@ object Edytor: TEdytor
         Width = 180
         Height = 21
         Hint = 
-          'Kliknij prawym klawiszem myszki, aby wprowadziæ nietypowy znak d' +
-          'iakrytyczny (np. z alfabetu niemieckiego lub francuskiego)'
+          'Click with right mouse button to enter a non-Latin character (i.' +
+          'e. from German or French alphabet)'
         Anchors = [akLeft, akRight, akBottom]
         ParentShowHint = False
         PopupMenu = popEdit
@@ -363,7 +363,7 @@ object Edytor: TEdytor
         Alignment = taCenter
         Anchors = [akLeft, akTop, akRight]
         AutoSize = False
-        Caption = 'Tytu³y i przedrostki:'
+        Caption = 'Titles or prefixes:'
         Font.Charset = EASTEUROPE_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -379,7 +379,7 @@ object Edytor: TEdytor
         Alignment = taCenter
         Anchors = [akLeft, akRight, akBottom]
         AutoSize = False
-        Caption = '0 pozycji'
+        Caption = '0 items'
         Font.Charset = EASTEUROPE_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -412,8 +412,8 @@ object Edytor: TEdytor
         Width = 180
         Height = 21
         Hint = 
-          'Kliknij prawym klawiszem myszki, aby wprowadziæ nietypowy znak d' +
-          'iakrytyczny (np. z alfabetu niemieckiego lub francuskiego)'
+          'Click with right mouse button to enter a non-Latin character (i.' +
+          'e. from German or French alphabet)'
         Anchors = [akLeft, akRight, akBottom]
         ParentShowHint = False
         PopupMenu = popEdit
@@ -445,7 +445,7 @@ object Edytor: TEdytor
         Alignment = taCenter
         Anchors = [akLeft, akTop, akRight]
         AutoSize = False
-        Caption = 'Nazwiska:'
+        Caption = 'Surnames:'
         Font.Charset = EASTEUROPE_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -461,7 +461,7 @@ object Edytor: TEdytor
         Alignment = taCenter
         Anchors = [akLeft, akRight, akBottom]
         AutoSize = False
-        Caption = '0 pozycji'
+        Caption = '0 items'
         Font.Charset = EASTEUROPE_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
@@ -494,8 +494,8 @@ object Edytor: TEdytor
         Width = 180
         Height = 21
         Hint = 
-          'Kliknij prawym klawiszem myszki, aby wprowadziæ nietypowy znak d' +
-          'iakrytyczny (np. z alfabetu niemieckiego lub francuskiego)'
+          'Click with right mouse button to enter a non-Latin character (i.' +
+          'e. from German or French alphabet)'
         Anchors = [akLeft, akRight, akBottom]
         ParentShowHint = False
         PopupMenu = popEdit
@@ -648,7 +648,7 @@ object Edytor: TEdytor
         0F7777000F777770F777777000F77700F7777777000F700F77777777700000F7
         7777777777000F7777777777700000F777777777000F70F77777770000F77700
         F77770000F7777700F77700F7777777700F77777777777777777}
-      Caption = 'Usuñ zaznaczon¹ pozycjê'
+      Caption = 'Delete selected item'
       OnClick = mnuDeleteClick
     end
     object mnuModify: TMenuItem
@@ -661,7 +661,7 @@ object Edytor: TEdytor
         F0F0E0FBFBFBF0F00FF0E0BFBF00000B0FF0E0FBFBFBFBF0FFF0E0BF0000000F
         FFF0000BFB00B0FF00F03330000B0FFFFFF0333330B0FFFF000033330B0FF00F
         0FF03330B00FFFFF0F033309030FFFFF00333330330000000333}
-      Caption = 'Modyfikuj zaznaczon¹ pozycjê'
+      Caption = 'Modify selected item'
       OnClick = mnuModifyClick
     end
     object MenuItem1: TMenuItem
@@ -677,7 +677,7 @@ object Edytor: TEdytor
         7777777777777777777777777777777777774447777777777777444770000000
         0077444777777777777777777777777777777777777777777777444777777777
         7777444770000000007744477777777777777777777777777777}
-      Caption = 'Dodaj kilka pozycji naraz'
+      Caption = 'Add few items at once'
       OnClick = mnuAddMoreClick
     end
   end
