@@ -30,13 +30,13 @@ implementation
 procedure TAddMore.FormShow(Sender: TObject);
 begin
 memo.Lines.Clear;
-BitBtn1.Caption:='Dodaj 0 pozycji';
+BitBtn1.Caption:='Add 0 items';
 memo.SetFocus;
 end;
 
 procedure TAddMore.memoChange(Sender: TObject);
 begin
-BitBtn1.Caption:='Dodaj '+IntToStr(memo.lines.count)+' pozycji';
+BitBtn1.Caption:='Add '+IntToStr(memo.lines.count)+' item(s)';
 end;
 
 end.

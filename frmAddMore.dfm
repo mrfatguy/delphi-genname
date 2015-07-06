@@ -3,7 +3,7 @@ object AddMore: TAddMore
   Top = 103
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
-  Caption = 'Dodaj kilka pozycji...'
+  Caption = 'Add more items...'
   ClientHeight = 254
   ClientWidth = 296
   Color = clBtnFace
@@ -24,10 +24,10 @@ object AddMore: TAddMore
     Height = 53
     AutoSize = False
     Caption = 
-      'Wpisz pozycje, które chcesz dodaæ, do poni¿szego pola, umieszcza' +
-      'j¹c ka¿d¹ z nich w osobnej linii. Je¿eli któraœ po- zycja ju¿ is' +
-      'tnieje, nie zostanie uwzglêdniona podczas doda- wania pozosta³yc' +
-      'h.'
+      'Enter new items, you want do add, to field below. Place each new' +
+      'item in separate line. If any given item will be already in the ' +
+      'list, it will be ignored. Only new items will be added to the li' +
+      'st.'
     WordWrap = True
   end
   object memo: TMemo
@@ -44,7 +44,7 @@ object AddMore: TAddMore
     Top = 224
     Width = 140
     Height = 25
-    Caption = 'Dodaj 0 pozycji'
+    Caption = 'Add 0 items'
     TabOrder = 1
     Kind = bkOK
   end
@@ -53,7 +53,7 @@ object AddMore: TAddMore
     Top = 224
     Width = 140
     Height = 25
-    Caption = 'Anuluj...'
+    Caption = 'Cancel...'
     TabOrder = 2
     Kind = bkCancel
   end
