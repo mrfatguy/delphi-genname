@@ -25,3 +25,11 @@ I don't have access to either most of my components used in this or any other of
 Keep in mind, that both comments and names (variables, object) are in Polish. I didn't find enough time and determination to translated them as well. I only translated strings.
 
 **This project ABANDONED! There is no wiki, issues and no support. There will be no future updates. Unfortunately, you're on your own.**
+
+### Sources of names data
+
+I've said twice, that this project is abandoned. If I ever decide to resurect it, it will be rewritten to be a fully functional web service. For this purpose (if it will ever happen) I may need an updated database of names.
+
+Here are some links to consider:
+
+- [studentsoftheworld.info](http://www.studentsoftheworld.info/penpals/stats.php3).
