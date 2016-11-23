@@ -33,3 +33,18 @@ I've said twice, that this project is abandoned. If I ever decide to resurect it
 Here are some links to consider:
 
 - [studentsoftheworld.info](http://www.studentsoftheworld.info/penpals/stats.php3).
+
+### Possible changes
+
+If I'll ever consider updating this project then it will be rewritten as a website, in PHP. It will have a separate git repository, which I'll eventually link here. This project, in Delphi, is abandoned as for me and as written in above chapter.
+
+When rewriting project, some changes may be considered:
+
+1. [Namespedia](http://www.namespedia.com/details/Studnik): adding selected name details screen with:
+
+    - name reversed,
+    - possible anagrams,
+    - possible misspells,
+    - letters count with vowels and consonants count and precentage.
+    
+These numbers and data seems pretty useless, but the general idea of adding such details screen somehow convinces me. To be discussed.
