@@ -2,7 +2,7 @@
 Mode=1
 Author=Tomasz Trejderowski
 CreationDate=11 September 2011
-Description=Chinese names. Note, that in China you speak second name (surname) as first an first name (given name) as second!
+Description=Chinese names. Remember that: (a) you have to switch surname with first name and (b) variety of Chinese names is very low -- 500 million (!) Chineses uses only 20 surnames (details: https://en.wikipedia.org/wiki/List_of_common_Chinese_surnames).
 
 [MaleNames]
 Aha
@@ -20,8 +20,6 @@ Ho
 Kaj
 Kam
 Lao
-Li
-Lin
 Nur
 Pen
 Siue
@@ -41,7 +39,6 @@ Fen
 Hua
 Jen
 Ju
-Lu
 Mej
 Sien
 Sin
@@ -49,6 +46,7 @@ Wen
 Wu
 
 [SurNames]
+Chen
 Czan
 Czang
 Czen
@@ -56,12 +54,17 @@ Cziu
 Czu
 Czun
 Fu
+Gao
+Guo
+Hu
+Huang
 Kaj
 Kung
 Lao
 Len
 Li
 Lin
+Liu
 Lo
 Lu
 Ma
@@ -73,8 +76,17 @@ Sun
 Tao
 Tun
 Tung
+Wang
 Won
 Wu
+Xiao
+Xu
+Yang
+Zhang
+Zhao
+Zheng
+Zhou
+Zhu
 
 [TitleNames]
  
