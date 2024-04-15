@@ -1,12 +1,12 @@
 # GenName [2024 update]
 
-**This project ABANDONED and the repository is archived! There is no wiki, issues and no support. There will be no future updates. Sorry!**
+**This project ABANDONED and the repository is archived! There is no wiki, issues, future updates or no support. Sorry!**
 
 You can still use the software. Simply clone the entire repository or download [GenName.exe](https://github.com/mrfatguy/delphi-genname/blob/master/GenName.exe) along with selected or all _*.nam_ files from [Fantasy](https://github.com/mrfatguy/delphi-genname/tree/master/Fantasty) and [Human](https://github.com/mrfatguy/delphi-genname/tree/master/Human) folder. It works even in Windows 11 (after ignoring an alert that this program may harm your PC), however executable version is still in Polish. Because, at the time of translating sources to English, I was no longer owner of any Delphi version and I wasn't able to compile English version (translation to English was made the brute-force way by text-editing all `.dfm` and `.pas` files; see [Status section](#status) for details).
 
 There's a [web version](https://github.com/mrfatguy/web-genname) being slowly developed. But, it needs time to fluorish.
 
-If looking for random names of a human beings (rather than some trolls and other fantasty creatures) then you can consider [Random Name Generator](https://www.namespedia.com/random-name-generator.php) from [Namespedia](https://www.namespedia.com/) as a replacement or in the meantime. Or [Students of the World website](http://www.studentsoftheworld.info/penpals/stats.php3).
+If looking for random names of a human beings (rather than some trolls and other fantasty creatures) then you can consider [Random Name Generator](https://www.namespedia.com/random-name-generator.php) from [Namespedia](https://www.namespedia.com/) or [Students of the World website](http://www.studentsoftheworld.info/penpals/stats.php3) as a replacement.
 
 --------
 
@@ -14,7 +14,7 @@ If looking for random names of a human beings (rather than some trolls and other
 
 Here comes my old Delphi tool that I used to generate names for games, books, poetry, avatars etc. It contains "databases" for generating many different names sets, including fantasty ones, both more and less known, and human names in many languages or from many culture types.
 
-This program allows name generation in three different modes. Play a little bit with different dictionary files to catch the difference.
+This program allows name generation in three different modes. Play a little bit to catch the difference.
 
 Program comes with an simple editor, which allows you to add or update existing dictionary files.
 
@@ -30,7 +30,7 @@ That's all about fantasy names. As for human names, with the exception for two d
 
 I also have aided myself a little bit with [Students of the World webpage](http://www.studentsoftheworld.info/penpals/stats.php3).
 
-Keep in mind that certain dictionary files maybe even twenty years old!
+**Keep in mind that certain dictionary files maybe even twenty years old**!
 
 ## Status
 
